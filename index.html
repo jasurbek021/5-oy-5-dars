@@ -7,18 +7,28 @@
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <!-- <link rel="stylesheet" href="./css/style.min.css"> -->
+    <style>
+      .img img {
+        display: none;
+      }
+      .dark-mode .images:nth-child(1),
+      .light-mode .images:nth-child(2) {
+        display: block;
+      }
+    </style>
   </head>
   <body>
-    <!-- HEADER START -->
-    <header class="header"></header>
-    <!-- HEADER END -->
-
-    <!-- MAIN START -->
-    <main class="main"></main>
-    <!-- MAIN END -->
-
-    <!-- FOOTER START -->
-    <footer class="footer"></footer>
-    <!-- FOOTER END -->
+    <div class="container">
+      <div class="divbtn">
+        <button class="btn" id="darkBtn">DARK MODE</button>
+        <button class="btn" id="lightBtn">LIGHT MODE</button>
+      </div>
+      <div class="img">
+        <img class="images" src="./images/DARK.svg" alt="black" />
+        <img class="images" src="./images/LIGHT.svg" alt="" />
+      </div>
+      <img class="images" src="./images/LIGHT.svg" alt="" />
+    </div>
+    <script src="./js/app.js"></script>
   </body>
 </html>
